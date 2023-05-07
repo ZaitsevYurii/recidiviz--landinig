@@ -1,0 +1,19 @@
+@use "base/variables" as *;
+@use "base/mixins" as *;
+
+@import "base/fonts";
+@import "base/normalize";
+@import "base/scafolding";
+@import "base/base";
+
+@import "sections/header";
+@import "blocks/navbar";
+@import "sections/main";
+@import "sections/footer";
+@import "sections/steps";
+@import "sections/approach";
+@import "sections/support";
+@import "sections/partners";
+@import "sections/info";
+@import "sections/press";
+@import "sections/where";

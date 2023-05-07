@@ -1,0 +1,81 @@
+.support {
+   position: relative;
+   background: #001414;
+   height: 680px;
+   display: flex;
+
+   @include laptop {
+      padding: 40px;
+   }
+
+   &::before {
+      content: '';
+      width: 287px;
+      height: 100%;
+      flex-shrink: 0;
+
+      background-image: url('../img/support-1.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include laptop {
+         display: none;
+      }
+   }
+
+   &::after {
+      content: '';
+      width: 287px;
+      height: 100%;
+      flex-shrink: 0;
+
+      background-image: url('../img/support-2.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include laptop {
+         display: none;
+      }
+   }
+
+   &__content {
+      flex-grow: 1;
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border-right: 1px solid #003331;
+      border-left: 1px solid #003331;
+
+      @include laptop {
+         padding: 0 40px;
+      }
+
+   }
+
+   &__title {
+      margin: 0 auto;
+      max-width: 542px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 22px;
+      color: $headerTextColor;
+      margin-bottom: 21px;
+   }
+
+   &__descr {
+      max-width: 542px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: $headerTextColor;
+
+      @include laptop {
+         font-size: 12px;
+      }
+   }
+}

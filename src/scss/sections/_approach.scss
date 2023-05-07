@@ -1,0 +1,129 @@
+.approach {
+   padding: 20px 0;
+   background: #F7F8F8;
+
+   &__content {
+      grid-column: 5 span;
+      padding-top: 33px;
+
+      @include desktop {
+         grid-column: 12 span;
+
+         margin-bottom: 40px;
+      }
+   }
+
+   &__title {
+      font-size: 22px;
+      line-height: 22px;
+      color: #003331;
+      margin-bottom: 13px;
+   }
+
+   &__descr {
+      max-width: 449px;
+      color: rgba(53, 83, 98, 0.8);
+      margin-bottom: 37px;
+
+      @include desktop {
+         max-width: 900px;
+      }
+   }
+
+   &__btn {
+      padding: 17px 33px;
+      border: 1px solid rgba(53, 83, 98, 0.2);
+      border-radius: 80px;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.02px;
+      color: #00413E;
+      background-color: transparent;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__images {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      grid-column: 7 / 6 span;
+
+      @include desktop {
+         grid-column: 12 span;
+         justify-content: center;
+      }
+
+      @include tablets {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__menu {
+      padding-top: 24px;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 32px;
+
+      @include laptop {
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include tablets {
+         grid-template-columns: repeat(1, 250px);
+         justify-content: center;
+      }
+
+   }
+
+   &__item {
+      color: rgba(53, 83, 98, 0.8);
+      border-top: 1px solid rgba(53, 83, 98, 0.3);
+      padding-top: 16px;
+      padding-left: 32px;
+      background-position: left top 18px;
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+   }
+
+   &__item--ted {
+      background-image: url('../img/ted.png');
+   }
+
+   &__item--NY {
+      background-image: url('../img/times.png');
+   }
+
+   &__item--scoop {
+      background-image: url('../img/scoop.png');
+   }
+
+   &__item--press {
+      background-image: url('../img/press.png');
+   }
+
+   &__item--time {
+      background-image: url('../img/time.png');
+   }
+
+   &__item--freethink {
+      background-image: url('../img/think.png');
+   }
+}
+
+.approach-top {
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+   }
+}
+
+.approach-bottom {
+   padding-top: 80px;
+}

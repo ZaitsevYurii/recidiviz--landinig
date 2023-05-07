@@ -1,0 +1,61 @@
+.info {
+   padding-top: 40px;
+   padding-bottom: 140px;
+   background: #F4F5F5;
+
+   &__inner {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+
+      @include laptop {}
+   }
+
+   &__title {
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 31px;
+      line-height: 38px;
+      letter-spacing: 1.2px;
+
+      color: #003331;
+      grid-column: 6 span;
+      max-width: 75%;
+
+      @include laptop {
+         grid-column: 12 span;
+         margin-bottom: 32px;
+      }
+   }
+
+   &__list {
+      grid-column: 7 / 6 span;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      row-gap: 36px;
+      column-gap: 40px;
+
+      @include laptop {
+         grid-column: 12 span;
+      }
+   }
+
+   &__item {
+      grid-column: 3 span;
+   }
+
+   &__subtitle {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #003331;
+
+   }
+
+   &__descr {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(53, 83, 98, 0.8);
+   }
+}

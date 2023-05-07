@@ -1,0 +1,147 @@
+.header {
+   min-height: 776px;
+   background-color: #0E191B;
+   @include bg-cover("../img/header-bg.jpg");
+
+   &__inner {
+      padding: 17px 0;
+      @include flexBetween
+   }
+
+   &__logo {
+      display: none;
+   }
+
+   &__link {
+      font-size: 11px;
+      line-height: 16px;
+      color: $headerTextColor;
+      transition: all .3s ease-in-out;
+
+      @include tablets {
+         display: none;
+      }
+
+      &:hover {
+         color: $hoverColor
+      }
+   }
+}
+
+.nav {
+
+   &__list {
+      @include flex;
+      margin-right: 32px;
+      gap: 50px;
+   }
+
+   &__link {
+      font-size: 13px;
+      line-height: 16px;
+      color: $headerTextColor;
+      transition: all .3s ease-in-out;
+
+
+
+      &:hover {
+         color: $hoverColor
+      }
+   }
+
+   @include tablets {
+      display: none;
+   }
+}
+
+.title {
+   padding-top: 130px;
+   padding-bottom: 40px;
+
+
+
+   &__title {
+      max-width: 535px;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 38px;
+      line-height: 44px;
+      letter-spacing: 1.2px;
+      color: $headerTextColor;
+      margin-bottom: 29px;
+
+      @include desktop {
+         font-size: 28px;
+      }
+
+      @include laptop {
+         max-width: 350px;
+      }
+
+      @include tablets {
+         padding-top: 240px;
+      }
+   }
+
+   &__desr {
+      max-width: 542px;
+      font-size: 18px;
+      line-height: 28px;
+      color: $headerTextColor;
+      margin-bottom: 29px;
+
+      @include desktop {
+         font-size: 14px;
+      }
+
+      @include laptop {
+         max-width: 300px;
+      }
+   }
+
+   &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 17px 33px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 80px;
+
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.02px;
+      color: $headerTextColor;
+
+      transition: all .3s ease-in-out;
+
+      margin-bottom: 122px;
+
+      &:hover {
+         border: 1px solid $hoverColor;
+      }
+
+   }
+
+   &__subtitle {
+      color: $headerTextColor;
+      margin-bottom: 33px;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 32px;
+   }
+
+   &__item {
+      grid-column: 1 span;
+      padding: 17px 0;
+      color: $headerTextColor;
+      border-top: 1px solid rgba(255, 255, 255, 0.6);
+
+      @include tablets {
+         grid-column: 3 span;
+      }
+   }
+}

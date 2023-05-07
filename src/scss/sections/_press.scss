@@ -1,0 +1,144 @@
+.press {
+   padding: 87px 0 132px 0;
+   background-color: #F5F5F5;
+
+   &__inner {}
+
+   &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 33px;
+
+      @include tablets {
+         flex-direction: column;
+      }
+   }
+
+   &__title {
+      font-family: 'Libre Baskerville', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 38px;
+      letter-spacing: 1.2px;
+      color: #003331;
+
+      @include tablets {
+         margin-bottom: 32px;
+      }
+   }
+
+   &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 17px 33px;
+      border: 1px solid rgba(53, 83, 98, 0.2);
+      border-radius: 80px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.02px;
+      color: #00413E;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      row-gap: 32px;
+      column-gap: 32px;
+
+      @include tablets {
+         grid-template-columns: repeat(6, 1fr);
+      }
+   }
+
+   &__card {
+      padding-top: 20px;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      grid-column: 4 span;
+
+      border-top: 1px solid rgba(53, 83, 98, 0.3);
+
+      @include laptop {
+         grid-column: 6 span;
+      }
+
+      @include tablets {
+         grid-column: 8 span;
+      }
+   }
+
+   &__name {
+      padding-left: 35px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      color: rgba(53, 83, 98, 0.6);
+
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+
+      margin-bottom: 5px;
+
+      &--1 {
+         background-image: url('../img/press-1.png');
+      }
+
+      &--2 {
+         background-image: url('../img/press-2.png');
+      }
+
+      &--3 {
+         background-image: url('../img/press--3.png');
+      }
+
+      &--4 {
+         background-image: url('../img/press-4.png');
+      }
+
+      &--5 {
+         background-image: url('../img/press-5.png');
+      }
+
+      &--6 {
+         background-image: url('../img/press-6.png');
+      }
+   }
+
+   &__date {
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      color: rgba(53, 83, 98, 0.6);
+      margin-bottom: 5px;
+   }
+
+   &__card-link {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 25px;
+
+      color: #00413E;
+
+      &::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+      }
+   }
+
+   &__bottom {}
+}

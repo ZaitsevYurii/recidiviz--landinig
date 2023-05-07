@@ -1,0 +1,37 @@
+html,
+body {
+	height: 100%;
+	// font-family: 'Libre Baskerville', serif;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.none {
+	display: none;
+}
+
+.graphics__img {
+	width: 100%;
+}
